@@ -1,0 +1,479 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.9.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_tiquiero.png">
+	<link rel="shortcut icon" href="/img/logo_tiquiero.png">
+	
+			    <title>
+    Tiquiero
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="tiquiero">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">Tiquiero</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/Blog-Hexo/">Blog/Hexo</a></li><li><a class="category-link" href="/categories/CSS/">CSS</a></li><li><a class="category-link" href="/categories/HTML/">HTML</a></li><li><a class="category-link" href="/categories/HTTP/">HTTP</a></li><li><a class="category-link" href="/categories/JS/">JS</a></li><li><a class="category-link" href="/categories/Python/">Python</a></li><li><a class="category-link" href="/categories/React/">React</a></li><li><a class="category-link" href="/categories/Webhooks/">Webhooks</a></li><li><a class="category-link" href="/categories/Webpack/">Webpack</a></li><li><a class="category-link" href="/categories/小程序/">小程序</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/tiquiero" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" id="banner" style="height: 25rem;background-image: url(https://pic.superbed.cn/item/5c7e47133a213b0417462e67);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>Webpack初体验</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>webpack 是一个现代 JavaScript 应用程序的静态模块打包器(module bundler)。当 webpack 处理应用程序时，它会递归地构建一个依赖关系图(dependency graph)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 bundle。</p>
+<p>这篇文章只是最简单的来一遍如何入门使用webpack，当然实际项目使用中会复杂的多，包括不同的需求和复杂的配置。这里就先不多说这些，更多详细的可以看<a href="https://www.webpackjs.com/concepts/" target="_blank" rel="noopener">webpack中文文档</a>。</p>
+<h3>安装 webpack,创建项目</h3>
+<p>先全局安装webpack和webpack-cli，这样可以在全局使用webpack命令：<code>npm install webpack -g</code>  <code>npm install webpack-cli -g</code></p>
+<p>新建项目文件夹，在该文件夹路径下执行<code>npm init</code>，会生成package.json文件。</p>
+<p>接着新建几个项目文件，新建app和src文件夹，app下新建一个index.html，如图：</p>
+<p><img src="https://pic.superbed.cn/item/5c7e47133a213b0417462e65" alt="02"></p>
+<p>在src下新建一个index.js文件，写一句测试代码<code>document.write(&quot;It index.&quot;);</code></p>
+<p>接着我们执行<code>webpack --mode development</code>，会发现项目里自动创建了一个dist文件夹，里面有个main.js文件，我们打开index.html，页面显示“It index”，这就说明我们的webpack打包成功了。</p>
+<p>这就是最简单的，webpack4支持的0配置打包。没有任何配置项，默认情况下webpack会将src文件夹下的入口文件index.js进行打包。当你执行打包命令后，webpack会自动查找项目中src目录下的index.js文件，然后进行打包，生成一个dist目录并存在一个打包好的main.js文件。当然，0配置下文件名字都要是定义好的，不能变。</p>
+<p>webpack --mode development/production，这是webpack4的打包命令了，不再是之前 webpack 文件a 文件b的方式了。我们可以在package.json里新增两个命令来简写一下：</p>
+<pre class="line-numbers language-glsl">
+    "scripts": {
+        "dev": "webpack --mode development",
+        "build": "webpack --mode production"
+    }
+</pre>
+<h3>webpack配置项</h3>
+<p>实际使用中我们是不可能0配置的，所以简单了解一下webpack的常用配置项和插件。</p>
+<p>在项目根目录下新建一个webpack.config.js文件，这是webpack的配置文件:</p>
+<pre class="line-numbers language-glsl">
+    const path = require('path');
+
+    module.exports = {
+        entry: './src/test.js',
+        output: {
+            path: path.resolve(__dirname,'dist'),
+            filename : 'bundle.js' 
+        },
+    }
+</pre>
+<p>entry可以指定打包的入口文件，output是打包后的输出配置项，path是打包后文件的输出路径，filename打包后的文件名。</p>
+<p>引入的path是node.js的一个模块，__dirname获得当前文件所在目录的完整目录名，path.resolve拼接返回相对于当前的工作目录的绝对路径。path.resolve和path.join的区别：</p>
+<pre class="line-numbers language-glsl">
+    //对于以/开始的路径片段，path.join只是简单的将该路径片段进行拼接，而path.resolve将以/开始的路径片段作为根目录，在此之前的路径将会被丢弃
+    path.join('/a', '/b') // 'a/b'
+    path.resolve('/a', '/b') // '/b'
+
+    //path.resolve总是返回一个以相对于当前的工作目录（working directory）的绝对路径。
+    path.join('./a', './b') // 'a/b'
+    path.resolve('./a', './b') // '/Users/username/Projects/webpack-demo/a/b'
+</pre>
+<p>还有更多详细配置项可以看 <a href="https://www.webpackjs.com/configuration/" target="_blank" rel="noopener">相关文档介绍</a>。</p>
+<h3>webpack插件</h3>
+<p>webpack的强大离不开非常丰富的插件，我们可以使用各种各样的插件来定制我们想要的功能，例如：生产环境中我们可能会有缓存的问题，我们可以在打包后的文件名中加入随机的hash值来避免这个问题：<code>filename : 'bundle.[hash].js'</code>，这样每次生成的打包文件就会带有一串hash值了。可是这样问题就来了，我们怎么在index.html引入打包后的这个js呢，如果每次都要去更改引入文件名岂不是太麻烦了。这时候我们就可以借助插件来自动帮我们引入每次打包后的文件。</p>
+<p><a href="https://www.npmjs.com/package/html-webpack-plugin" target="_blank" rel="noopener">html-webpack-plugin</a>，这应该是webpack中最常见的插件之一了。安装<code>npm install html-webpack-plugin --save-dev</code>，看看他的最基本用法，在webpack配置文件中加入以下配置项：</p>
+<pre class="line-numbers language-glsl">
+    module.exports = {
+        ···
+        plugins: [
+            new HtmlWebpackPlugin()
+        ]
+    }
+</pre>
+<p>打包后，我们会发现在dist文件夹下生成了两个文件，index.html和bundle.[hash].js，而且index.html里自动引入了打包生成的bundle.[hash].js。所有的这些都是 html-webpack-plugin 的功劳。它会自动帮你生成一个 html 文件，并且引用相关的 assets 文件(如 css, js)。当然，html-webpack-plugin还支持很多配置项，例如生成的文件名，或者可以套用模板文件来生成：</p>
+<pre class="line-numbers language-glsl">
+    module.exports = {
+        ···
+        plugins: [
+           new HtmlWebpackPlugin({
+                filename: './index.html',
+                template:'./app/index.html'
+            })
+        ]
+    }
+</pre>
+<p>html-webpack-plugin更多配置项可以看 <a href="https://www.npmjs.com/package/html-webpack-plugin" target="_blank" rel="noopener">官方文档</a>。</p>
+<p>还有各种各样的插件，例如每次打包dist都会生成文件，多次打包之后我们想要dist只保留最新的文件，就可以用clean-webpack-plugin插件，每次打包前删除dist里的文件：</p>
+<pre class="line-numbers language-glsl">
+    module.exports = {
+        ···
+        plugins: [
+            ···
+            new CleanWebpackPlugin(['dist'],{
+                root: __dirname,
+            })
+        ]
+    }
+</pre>
+<h3>webpack，sources</h3>
+<p>实现项目中，我们可能还需要引入其他资源文件，例如css文件。webpack可以把以指定入口的一系列相互依赖的模块打包成一个文件，这里的模块指的不只是js，也可以是css。在webpack中，就可以通过css-loader，可以实现在js文件中通过import/require的方式，来引入css。</p>
+<p>安装<code>npm install css-loader --save-dev,npm install style-loader --save-dev</code>。</p>
+<p>接着创建一个css文件，并在入口文件里引入该css文件，然后在webpack配置文件中增加以下配置：</p>
+<pre class="line-numbers language-glsl">
+    module.exports = {
+        ···
+        module: {
+            rules:[
+                {
+                    test:/\.css$/,
+                    loader: 'style-loader!css-loader'
+                }
+            ]
+        },
+    }
+</pre>
+<p>打开打包之后的js文件，就会发现已经把css里的内容一起打包进去了。如果你还想把这些引入的相关assets 文件(如 css, js)通过inline的方式直接引入到index.html里，你可以试试我自己写的这个webpack插件 <a href="">assets-inline-plugin</a>。有关这个插件的使用和详细过程，可以看我的这篇文章 <a href="http://tiquiero.tech/2018/06/01/assets-inline-plugin~%E7%AC%AC%E4%B8%80%E4%B8%AAWebpack%E6%8F%92%E4%BB%B6/" target="_blank" rel="noopener">自己的第一个NPM包–assets-inline-plugin</a>。</p>
+<p>好了，这些就是webpack的基本使用，你可以自己去发掘配置各种选项，打造一个完美的打包工具~</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2018/12/14/Webpack初体验/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2018/12/14/Webpack初体验/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+
+        <a class="scrollTop toTop" id="toTop" href="javascript:;" style="display: block;"></a>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="https://github.com/Tiquiero" style="border-bottom: none;">tiquiero</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2022总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+
+    <!-- 伊布 -->
+    <!-- <div class="eevee">
+        <div class="body">
+          <div class="head">
+            <div class="ears">
+              <div class="ear">
+                <div class="lobe"></div>
+              </div>
+              <div class="ear">
+                <div class="lobe"></div>
+              </div>
+            </div>
+            <div class="face">
+              <div class="eyes">
+                <div class="eye">
+                  <div class="eyelid"></div>
+                </div>
+                <div class="eye">
+                  <div class="eyelid"></div>
+                </div>
+              </div>
+              <div class="nose"></div>
+              <div class="mouth"></div>
+            </div>
+          </div>
+          <div class="chest">
+            <div class="fur">
+              <div class="patch"></div>
+            </div>
+            <div class="fur">
+              <div class="patch"></div>
+            </div>
+            <div class="fur">
+              <div class="patch"></div>
+            </div>
+          </div>
+          <div class="legs">
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+          </div>
+          <div class="tail">
+            <div class="tail">
+              <div class="tail">
+                <div class="tail">
+                  <div class="tail">
+                    <div class="tail -end"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> -->
+</body>
+
+
+
+	 
+	 
+	 <!-- 伊布 -->
+	 <!-- <div class="eevee">
+		<div class="body">
+		  <div class="head">
+			<div class="ears">
+			  <div class="ear">
+				<div class="lobe"></div>
+			  </div>
+			  <div class="ear">
+				<div class="lobe"></div>
+			  </div>
+			</div>
+			<div class="face">
+			  <div class="eyes">
+				<div class="eye">
+				  <div class="eyelid"></div>
+				</div>
+				<div class="eye">
+				  <div class="eyelid"></div>
+				</div>
+			  </div>
+			  <div class="nose"></div>
+			  <div class="mouth"></div>
+			</div>
+		  </div>
+		  <div class="chest">
+			<div class="fur">
+			  <div class="patch"></div>
+			</div>
+			<div class="fur">
+			  <div class="patch"></div>
+			</div>
+			<div class="fur">
+			  <div class="patch"></div>
+			</div>
+		  </div>
+		  <div class="legs">
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+		  </div>
+		  <div class="tail">
+			<div class="tail">
+			  <div class="tail">
+				<div class="tail">
+				  <div class="tail">
+					<div class="tail -end"></div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div> -->
+</html>

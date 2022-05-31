@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.9.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_tiquiero.png">
+	<link rel="shortcut icon" href="/img/logo_tiquiero.png">
+	
+			    <title>
+    Tiquiero
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="tiquiero">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">Tiquiero</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/Blog-Hexo/">Blog/Hexo</a></li><li><a class="category-link" href="/categories/CSS/">CSS</a></li><li><a class="category-link" href="/categories/HTML/">HTML</a></li><li><a class="category-link" href="/categories/HTTP/">HTTP</a></li><li><a class="category-link" href="/categories/JS/">JS</a></li><li><a class="category-link" href="/categories/Python/">Python</a></li><li><a class="category-link" href="/categories/React/">React</a></li><li><a class="category-link" href="/categories/Webhooks/">Webhooks</a></li><li><a class="category-link" href="/categories/Webpack/">Webpack</a></li><li><a class="category-link" href="/categories/小程序/">小程序</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/tiquiero" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" id="banner" style="height: 25rem;background-image: url(https://pic.superbed.cn/item/5c7e475e3a213b04174635b0);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>HTTP缓存机制</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>我们在请求一个静态文件的时候（图片，css，js），这些文件的特点是文件不经常变化，将这些不经常变化的文件存储起来，对客户端来说是一个优化用户浏览体验的方法。那么这个就是客户端缓存的意义了，而Http 缓存机制则是作为 web 性能优化的重要手段。HTTP缓存有多种规则，根据是否需要重新向服务器发起请求来分类，可以将其分为两大类(强制缓存，对比缓存)。</p>
+<p><img src="https://pic.superbed.cn/item/5c7e475e3a213b04174635a2" alt="02"></p>
+<p>我们从上面的时序图可以看到两类缓存规则的不同，强制缓存如果生效，不需要再和服务器发生交互，而对比缓存不管是否生效，都需要与服务端发生交互。两类缓存规则可以同时存在，强制缓存优先级高于对比缓存。</p>
+<h1>强制缓存</h1>
+<p>强制缓存，在缓存数据未失效的情况下，可以直接使用缓存数据，那么浏览器是如何判断缓存数据是否失效呢？我们知道，在没有缓存数据的时候，浏览器向服务器请求数据时，服务器会将数据和缓存规则一并返回，缓存规则信息包含在响应header中。对于强制缓存来说，响应header中会有两个字段来标明失效规则（Expires/Cache-Control）使用chrome的开发者工具，可以很明显的看到对于强制缓存生效时，网络请求的情况。</p>
+<h4>Expires</h4>
+<p>Expires的值为服务端返回的到期时间，即下一次请求时，请求时间小于服务端返回的到期时间，直接使用缓存数据。
+不过Expires 是HTTP 1.0的东西，现在默认浏览器均默认使用HTTP 1.1，所以它的作用基本忽略。另一个问题是，到期时间是由服务端生成的，但是客户端时间可能跟服务端时间有误差，这就会导致缓存命中的误差。所以HTTP 1.1 的版本，使用Cache-Control替代。</p>
+<h4>Cache-Control</h4>
+<p>Cache-Control 是最重要的规则。常见的取值有private、public、no-cache、max-age，no-store，默认为private。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">private:             客户端可以缓存</span><br><span class="line">public:              客户端和代理服务器都可缓存（前端的同学，可以认为public和private是一样的）</span><br><span class="line">max-age=xxx:         缓存的内容将在 xxx 秒后失效</span><br><span class="line">no-cache:            需要使用对比缓存来验证缓存数据（后面介绍）</span><br><span class="line">no-store:            所有内容都不会缓存，强制缓存，对比缓存都不会触发</span><br></pre></td></tr></table></figure>
+<p>例如下图：</p>
+<p><img src="https://pic.superbed.cn/item/5c7e475e3a213b04174635a4" alt="03"></p>
+<p>图中Cache-Control指定了max-age，缓存时间为60秒，也就是在60秒内再次请求这条数据，都会直接获取缓存数据库中的数据，直接使用。如果有的服务器同时设置了Expires和Cache-Control怎么办呢？由于Cache-Controll是HTTP1.1中才有的，所以就是根据更先进的设置Cache-Control来为标准。</p>
+<h1>对比缓存</h1>
+<p>浏览器第一次请求数据时，服务器会将缓存标识与数据一起返回给客户端，客户端将二者备份至缓存数据库中。再次请求数据时，客户端将备份的缓存标识发送给服务器，服务器根据缓存标识进行判断，判断成功后，返回304状态码，通知客户端比较成功，可以使用缓存数据。对于对比缓存来说，缓存标识的传递是我们着重需要理解的，它在请求header和响应header间进行传递，一共分为两种标识传递：</p>
+<h4>Last-Modified / If-Modified-Since</h4>
+<p>Last-Modified：服务器在响应请求时，告诉浏览器资源的最后修改时间。</p>
+<p><img src="https://pic.superbed.cn/item/5c7e475e3a213b04174635a6" alt="04"></p>
+<p>If-Modified-Since：再次请求服务器时，通过该字段通知服务器上次请求时，服务器返回的资源最后修改时间。服务器收到请求后发现有If-Modified-Since 则与被请求资源的最后修改时间进行比对。若资源的最后修改时间大于If-Modified-Since，说明资源又被改动过，则响应整片资源内容，返回状态码200；若资源的最后修改时间小于或等于If-Modified-Since，说明资源无新修改，则响应HTTP 304，告知浏览器继续使用所保存的cache。</p>
+<p><img src="https://pic.superbed.cn/item/5c7e475e3a213b04174635ac" alt="05"></p>
+<h4>Etag / If-None-Match（优先级高于Last-Modified / If-Modified-Since）</h4>
+<p>第一次客户端访问资源的时候，服务端返回资源内容的同时返回了ETag：1234，告诉客户端：这个文件的标签是1234，我如果修改了我这边的资源的话，这个标签就会不一样了。第二次客户端访问资源的时候，由于缓存中已经有了Etag为1234的资源，客户端要去服务端查询的是这个资源有木有过期呢？所以带上了If-None-Match: 1234。告诉服务端：如果你那边的资源还是1234标签的资源，你就返回304告诉我，不需要返回资源内容了。如果不是的话，你再返回资源内容给我就行了。服务端就比较下Etag来看是返回304还是200。</p>
+<h1>各种刷新</h1>
+<p>刷新有三种：</p>
+<p>1.浏览器中写地址，回车：浏览器发现缓存中有这个文件了，好了，就不发送任何请求了，直接去缓存中获取展现。（最快）</p>
+<p>2.F5 ,就是让浏览器好歹去看看这个文件是否有过期了，发一个请求带上If-Modify-since，如果这个时间后还没修改过，不需要给你任何信息了，返回304就行了。</p>
+<p>3.Ctrl+F5：强制刷新，就是把缓存种的文件给删了，再去服务器请求个完整的资源文件下来。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2019/04/05/HTTP缓存机制/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2019/04/05/HTTP缓存机制/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+
+        <a class="scrollTop toTop" id="toTop" href="javascript:;" style="display: block;"></a>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="https://github.com/Tiquiero" style="border-bottom: none;">tiquiero</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2022总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+
+    <!-- 伊布 -->
+    <!-- <div class="eevee">
+        <div class="body">
+          <div class="head">
+            <div class="ears">
+              <div class="ear">
+                <div class="lobe"></div>
+              </div>
+              <div class="ear">
+                <div class="lobe"></div>
+              </div>
+            </div>
+            <div class="face">
+              <div class="eyes">
+                <div class="eye">
+                  <div class="eyelid"></div>
+                </div>
+                <div class="eye">
+                  <div class="eyelid"></div>
+                </div>
+              </div>
+              <div class="nose"></div>
+              <div class="mouth"></div>
+            </div>
+          </div>
+          <div class="chest">
+            <div class="fur">
+              <div class="patch"></div>
+            </div>
+            <div class="fur">
+              <div class="patch"></div>
+            </div>
+            <div class="fur">
+              <div class="patch"></div>
+            </div>
+          </div>
+          <div class="legs">
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+          </div>
+          <div class="tail">
+            <div class="tail">
+              <div class="tail">
+                <div class="tail">
+                  <div class="tail">
+                    <div class="tail -end"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> -->
+</body>
+
+
+
+	 
+	 
+	 <!-- 伊布 -->
+	 <!-- <div class="eevee">
+		<div class="body">
+		  <div class="head">
+			<div class="ears">
+			  <div class="ear">
+				<div class="lobe"></div>
+			  </div>
+			  <div class="ear">
+				<div class="lobe"></div>
+			  </div>
+			</div>
+			<div class="face">
+			  <div class="eyes">
+				<div class="eye">
+				  <div class="eyelid"></div>
+				</div>
+				<div class="eye">
+				  <div class="eyelid"></div>
+				</div>
+			  </div>
+			  <div class="nose"></div>
+			  <div class="mouth"></div>
+			</div>
+		  </div>
+		  <div class="chest">
+			<div class="fur">
+			  <div class="patch"></div>
+			</div>
+			<div class="fur">
+			  <div class="patch"></div>
+			</div>
+			<div class="fur">
+			  <div class="patch"></div>
+			</div>
+		  </div>
+		  <div class="legs">
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+		  </div>
+		  <div class="tail">
+			<div class="tail">
+			  <div class="tail">
+				<div class="tail">
+				  <div class="tail">
+					<div class="tail -end"></div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div> -->
+</html>

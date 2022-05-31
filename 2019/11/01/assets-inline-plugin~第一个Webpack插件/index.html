@@ -1,0 +1,589 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.9.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_tiquiero.png">
+	<link rel="shortcut icon" href="/img/logo_tiquiero.png">
+	
+			    <title>
+    Tiquiero
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="tiquiero">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">Tiquiero</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/Blog-Hexo/">Blog/Hexo</a></li><li><a class="category-link" href="/categories/CSS/">CSS</a></li><li><a class="category-link" href="/categories/HTML/">HTML</a></li><li><a class="category-link" href="/categories/HTTP/">HTTP</a></li><li><a class="category-link" href="/categories/JS/">JS</a></li><li><a class="category-link" href="/categories/Python/">Python</a></li><li><a class="category-link" href="/categories/React/">React</a></li><li><a class="category-link" href="/categories/Webhooks/">Webhooks</a></li><li><a class="category-link" href="/categories/Webpack/">Webpack</a></li><li><a class="category-link" href="/categories/小程序/">小程序</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/tiquiero" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" id="banner" style="height: 25rem;background-image: url(https://pic.superbed.cn/item/5c7e46fd3a213b0417462bec);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>assets-inline-plugin~第一个NPM包/Webpack插件</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>没有发布过npm包的同学，可能会对NPM对开发有一种蜜汁敬畏，觉得这是一个很高大上的东西。其实在了解了之后发现，npm包就是一个我们平时经常写的一个export出来的模块而已，只不过跟其它业务代码耦合性低，具有较高的独立性。然后在 <a href="http://tiquiero.tech/2018/05/24/Webpack%E5%88%9D%E4%BD%93%E9%AA%8C/" target="_blank" rel="noopener">Webpack初体验</a> 的时候，在使用html-webpack-plugin插件时刚好有个想法，能不能把引用的相关 assets 文件(如 css, js)以inline的方式引入进文件里。所以就决定尝试一下如何编写一个webpack插件，并且发布在NPM上，也就有了这个 <a href="https://www.npmjs.com/package/assets-inline-plugin" target="_blank" rel="noopener">assets-inline-plugin</a>。</p>
+<h3>如何写一个webpack插件</h3>
+<p>首先我们要先去了解两个对象，<a href="https://www.webpackjs.com/api/compiler-hooks/" target="_blank" rel="noopener">compiler</a>和<a href="https://www.webpackjs.com/api/compilation-hooks/" target="_blank" rel="noopener">compilation</a>：</p>
+<p>compiler对象包涵了Webpack环境所有的的配置信息，这个对象在Webpack启动时候被构建，并配置上所有的设置选项包括 options，loaders，plugins。当启用一个插件到Webpack环境的时候，这个插件就会接受一个指向compiler的参数。运用这个参数来获取到Webpack环境。更多详细可看 <a href="https://github.com/webpack/webpack/blob/master/lib/Compiler.js" target="_blank" rel="noopener">源代码</a>。</p>
+<p>compilation代表了一个单一构建版本的物料。在webpack中间件运行时，每当一个文件发生改变时就会产生一个新的compilation从而产生一个新的变异后的物料集合。compilation列出了很多关于当前模块资源的信息，编译后的资源信息，改动过的文件，以及监听过的依赖。compilation也提供了插件需要自定义功能的回调点。更多详细可看 <a href="https://github.com/webpack/webpack/blob/master/lib/Compilation.js" target="_blank" rel="noopener">源代码</a>。</p>
+<h4>插件基本结构</h4>
+<p>官方教程基本结构：</p>
+<pre class="line-numbers language-glsl">
+  function HelloWorldPlugin(options) {
+    // Setup the plugin instance with options...
+  }
+
+  HelloWorldPlugin.prototype.apply = function(compiler) {
+    compiler.plugin('done', function() {
+      console.log('Hello World!'); 
+    });
+  };
+
+  module.exports = HelloWorldPlugin;
+</pre>
+<p>options是你在webpack配置文件里给插件的配置项参数。Plugins是可以用自身原型方法apply来实例化的对象，apply这个函数是提供给webpack运行时调用的，webpack会在这里注入compiler对象。compiler有很多生命周期钩子函数，除了done还有emit,run,afterEmit等等，我们可以在具体某个生命周期里去做相应的操作。</p>
+<p>assets属性是compilation里最重要的部分，因为如果你想借助webpack帮你生成文件，你需要像官方教程里那样在assets上写上对应的文件信息。</p>
+<p>或者你可以不用函数的方式，用定义一个类的方式也行，比如我这个插件就是这样的结构：</p>
+<pre class="line-numbers language-glsl">
+  class HelloWorldPlugin{
+    constructor(options){
+
+    }
+    apply(compiler){
+      compiler.plugin('compilation',compilation => {
+
+      });
+    }
+  }
+
+  module.exports = HelloWorldPlugin;
+</pre>
+<h3>assets-inline-plugin</h3>
+<p>html-webpack-plugin是会把打包的资源js文件以script标签的形式自动引入模板页里，现在我们要换成inline的形式去引入的话，其实最核心的操作就是在html-webpack-plugin插件调用模板去插入资源文件之前更改资源。</p>
+<h4>参数判断</h4>
+<p>因为这个插件比较简单，所以只设定有两个参数inline和remove。inline是需要包含的资源形式配置项，是需要inline js还是css资源文件，取值可以是boolean or regexp or object，默认是为true，格式可以如下：</p>
+<pre><code>inline: true
+inline: /\.(css|js)$/
+inline: { css: /\.css$/, js: /\.js$/ }
+inline: { css: true, js: true }
+</code></pre>
+<p>remove表示是否需要清除inline进来了的文件，默认为true。</p>
+<p>首先我们需要判断配置的参数，代码如下：</p>
+<pre class="line-numbers language-glsl">
+  class HtmlInlinePlugin {
+    constructor(options) {
+      isObject(options) || (options = {});
+
+      if (!isObject(options.inline)) {
+        if (options.hasOwnProperty('inline')) {
+          let inline = isRegExp(options.inline) ? options.inline : !!options.inline;
+          options.inline = { js: inline, css: inline };
+        }
+        else options.inline = { js: true, css: true };
+      }
+      else {
+        // 取反操作“!”会得到与目标对象代表的布尔型值相反的布尔值，而再做一次取反“!!”就得到了与其相同的布尔值。
+        options.inline.js = isRegExp(options.inline.js) ? options.inline.js : !!options.inline.js;
+        options.inline.css = isRegExp(options.inline.css) ? options.inline.css : !!options.inline.css;
+      }
+
+      this.outDir = '';
+      this.inlineAsserts = [];
+      if(options.remove){
+        this.options = Object.assign({}, options);
+      }else{
+        this.options = Object.assign({ remove: true }, options);
+      }
+  }
+  apply(compiler) {
+    ···
+  }
+
+  function isObject(obj) {
+    return Object.prototype.toString.call(obj) === '[object Object]';
+  }
+
+  function isRegExp(obj) {
+    return Object.prototype.toString.call(obj) === '[object RegExp]';
+  }
+</pre>
+<h4>修改打包资源</h4>
+<p>对文件的更改操作在apply这个方法里去执行，主要是通过compilation这个对象来操作。在调用模板之前更改资源，我们借助了html-webpack-plugin的插件事件 <a href="https://www.npmjs.com/package/html-webpack-alter-asset-plugin" target="_blank" rel="noopener">html-webpack-alter-asset-plugin</a>。</p>
+<p>html-webpack-plugin允许其他插件来改变html文件内容。具体的事件如下：</p>
+<pre><code>Async（异步事件）:
+    * html-webpack-plugin-before-html-generation
+    * html-webpack-plugin-before-html-processing
+    * html-webpack-plugin-alter-asset-tags
+    * html-webpack-plugin-after-html-processing
+    * html-webpack-plugin-after-emit
+
+Sync（同步事件）:
+    * html-webpack-plugin-alter-chunks
+</code></pre>
+<p>这个插件事件包含的参数htmlPluginData有相应的插件数据，数据里的head是一个数组，我们通过遍历这个数组来在文件头部插入css资源：</p>
+<pre class="line-numbers language-glsl">
+  pluginData.head = pluginData.head.map(tag => {
+      let assetUrl = tag.attributes.href;
+      if (this.testAssertName(assetUrl, this.options.inline.css)) {
+        tag = { tagName: 'style', closeTag: true ,attributes: {type: 'text/css'}};
+        this.updateTag(tag, assetUrl, compilation);
+      }
+
+      return tag;
+  });
+</pre>
+<p>同理，我们循环插件数据里的body数组，来在文件主体插入js资源：</p>
+<pre class="line-numbers language-glsl">
+    pluginData.body = pluginData.body.map(tag => {
+      let assetUrl = tag.attributes.src;
+      if (this.testAssertName(assetUrl, this.options.inline.js)) {
+        tag = { tagName: 'script', closeTag: true ,attributes: {type: 'text/javascript'}};
+        this.updateTag(tag, assetUrl, compilation);
+      }
+
+      return tag;
+    });
+</pre>
+<p>插入这些资源文件后，我们需要把这些更新进compilation里。assetUrl分别是获取到css的href和js的src路径：</p>
+<pre class="line-numbers language-glsl">
+    updateTag(tag, assetUrl, compilation) {
+        let publicUrlPrefix = compilation.outputOptions.publicPath || '';
+
+        //path.posix.relative(from, to) 方法返回从 from 到 to 的相对路径（基于当前工作目录）
+        //在 POSIX 上：path.relative('/data/orandea/test/aaa', '/data/orandea/impl/bbb');
+        // 返回: '../../impl/bbb'
+        let assetName = path.posix.relative(publicUrlPrefix, assetUrl);
+        let asset = compilation.assets[assetName];
+
+        let source = asset.source();
+        if (typeof source !== 'string') {
+          source = source.toString();
+        }
+
+        // remove sourcemap comments
+        tag.innerHTML = sourceMappingURL.removeFrom(source);
+
+        // mark inlined asserts which will be deleted lately
+        this.inlineAsserts.push(assetName);
+
+        return tag;
+      }
+</pre>
+<p>最后，我们把内联进来的资源原文件给删除，</p>
+<pre class="line-numbers language-glsl">
+  removeInlineAsserts() {
+      if (!this.outDir) return;
+
+      this.inlineAsserts.forEach(file => {
+        let filePath = path.join(this.outDir, file);
+
+          //如果路径存在
+        if (fs.existsSync(filePath)) {
+            //删除文件
+          fs.unlinkSync(filePath);
+        }
+
+        rmdirSync(this.outDir, file);
+      })
+  }
+</pre>
+<p>该函数是路径下一层层循环判断文件是否存在：</p>
+<pre class="line-numbers language-glsl">
+  function rmdirSync(outDir, file) {
+    //path.sep平台特定的路径片段分隔符，Windows 上是 \
+    file = path.join(file).split(path.sep);
+    file.pop();
+
+    if (!file.length) return;
+
+    file = file.join(path.sep);
+    let dirPath = path.join(outDir, file);
+
+    if (fs.existsSync(dirPath)) {
+      //同步读取目录，返回一个所包含的文件和子目录的数组
+      let files = fs.readdirSync(dirPath);
+
+      if (!files.length) {
+        fs.rmdirSync(dirPath);
+      }
+    }
+    rmdirSync(outDir, file);
+  }
+</pre>
+<h3>创建和发布NPM包</h3>
+<p>首先去 <a href="https://www.npmjs.com" target="_blank" rel="noopener">NPM</a> 注册一个账户。如果是第一次发布包，执行<code>npm adduser</code>，然后输入前面注册好的NPM账号，密码和邮箱，将提示创建成功。如果不是第一次发布包，执行<code>npm login</code>进行登录，同样输入NPM账号，密码和邮箱。(npm adduser成功的时候默认你已经登陆了，所以不需要再进行npm login了)</p>
+<p>接着进入项目文件夹下，然后输入<code>npm publish</code>进行发布。</p>
+<p>当终端显示如下面的信息时，就代表版本号为1.0.0的包发布成功啦！前往NPM官网就可以查到你的包了。</p>
+<p><code>+ sugars_demo@1.0.0</code></p>
+<p>但要注意的是，每次更新时，必须修改版本号后才能更新，比如将1.0.0修改为1.0.1后就能进行更新发布了。
+这里的包版本号有一套规则，采用的是semver（语义化版本），通俗点意思就是版本号：大改.中改.小改。</p>
+<h3>Tips</h3>
+<p>有时，我们会看到一些npm包有很漂亮的版本号图标：</p>
+<p><img src="https://pic.superbed.cn/item/5c7e466b3a213b04174620d1" alt="02"></p>
+<p>这些图标，其实可以在https://shields.io/ 上去获取图标地址，也可以自定义制作，拉到网站最下面：</p>
+<p><img src="https://pic.superbed.cn/item/5c7e466b3a213b04174620d3" alt="03"></p>
+<p>输入相关信息后就会生成图标了：</p>
+<p><img src="https://pic.superbed.cn/item/5c7e466b3a213b04174620d5" alt="04"></p>
+<p>然后我们还可以生成有关这个npm包的信息图标，就像这样的：</p>
+<p><img src="https://pic.superbed.cn/item/5c7e466b3a213b04174620de" alt="05"></p>
+<p>这个图标我们也可以在上自定义制作,只需要输入你的npm包名，然后选择喜欢的样式就行啦：</p>
+<p><img src="https://pic.superbed.cn/item/5c7e466b3a213b04174620e0" alt="06"></p>
+<p>插件完整的代码可以看 <a href="https://github.com/Tiquiero/assets-inline-plugin" target="_blank" rel="noopener">这里</a>。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2019/11/01/assets-inline-plugin~第一个Webpack插件/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2019/11/01/assets-inline-plugin~第一个Webpack插件/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+
+        <a class="scrollTop toTop" id="toTop" href="javascript:;" style="display: block;"></a>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="https://github.com/Tiquiero" style="border-bottom: none;">tiquiero</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2022总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+
+    <!-- 伊布 -->
+    <!-- <div class="eevee">
+        <div class="body">
+          <div class="head">
+            <div class="ears">
+              <div class="ear">
+                <div class="lobe"></div>
+              </div>
+              <div class="ear">
+                <div class="lobe"></div>
+              </div>
+            </div>
+            <div class="face">
+              <div class="eyes">
+                <div class="eye">
+                  <div class="eyelid"></div>
+                </div>
+                <div class="eye">
+                  <div class="eyelid"></div>
+                </div>
+              </div>
+              <div class="nose"></div>
+              <div class="mouth"></div>
+            </div>
+          </div>
+          <div class="chest">
+            <div class="fur">
+              <div class="patch"></div>
+            </div>
+            <div class="fur">
+              <div class="patch"></div>
+            </div>
+            <div class="fur">
+              <div class="patch"></div>
+            </div>
+          </div>
+          <div class="legs">
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+          </div>
+          <div class="tail">
+            <div class="tail">
+              <div class="tail">
+                <div class="tail">
+                  <div class="tail">
+                    <div class="tail -end"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> -->
+</body>
+
+
+
+	 
+	 
+	 <!-- 伊布 -->
+	 <!-- <div class="eevee">
+		<div class="body">
+		  <div class="head">
+			<div class="ears">
+			  <div class="ear">
+				<div class="lobe"></div>
+			  </div>
+			  <div class="ear">
+				<div class="lobe"></div>
+			  </div>
+			</div>
+			<div class="face">
+			  <div class="eyes">
+				<div class="eye">
+				  <div class="eyelid"></div>
+				</div>
+				<div class="eye">
+				  <div class="eyelid"></div>
+				</div>
+			  </div>
+			  <div class="nose"></div>
+			  <div class="mouth"></div>
+			</div>
+		  </div>
+		  <div class="chest">
+			<div class="fur">
+			  <div class="patch"></div>
+			</div>
+			<div class="fur">
+			  <div class="patch"></div>
+			</div>
+			<div class="fur">
+			  <div class="patch"></div>
+			</div>
+		  </div>
+		  <div class="legs">
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+		  </div>
+		  <div class="tail">
+			<div class="tail">
+			  <div class="tail">
+				<div class="tail">
+				  <div class="tail">
+					<div class="tail -end"></div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div> -->
+</html>

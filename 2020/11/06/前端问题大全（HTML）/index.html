@@ -1,0 +1,411 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.9.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_tiquiero.png">
+	<link rel="shortcut icon" href="/img/logo_tiquiero.png">
+	
+			    <title>
+    Tiquiero
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="tiquiero">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">Tiquiero</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/Blog-Hexo/">Blog/Hexo</a></li><li><a class="category-link" href="/categories/CSS/">CSS</a></li><li><a class="category-link" href="/categories/HTML/">HTML</a></li><li><a class="category-link" href="/categories/HTTP/">HTTP</a></li><li><a class="category-link" href="/categories/JS/">JS</a></li><li><a class="category-link" href="/categories/Python/">Python</a></li><li><a class="category-link" href="/categories/React/">React</a></li><li><a class="category-link" href="/categories/Webhooks/">Webhooks</a></li><li><a class="category-link" href="/categories/Webpack/">Webpack</a></li><li><a class="category-link" href="/categories/小程序/">小程序</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/tiquiero" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" id="banner" style="height: 25rem;background-image: url(https://pic.imgdb.cn/item/617fc94d2ab3f51d919a7247.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>前端问题大全（HTML）</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>本文记录了一直以来JS走过的各种坑，以及各种前端HTML面试问题(因为是不定时补充，想起什么就写什么了，所以顺序没有特定排列，可能有点乱，可以关键词快速搜索)，持续更新中~~~</p>
+<h3>HTML语义化</h3>
+<p>根据内容的结构化（内容语义化），选择合适的标签（代码语义化）便于开发者阅读和写出更优雅的代码的同时让浏览器的爬虫和机器很好地解析。尽可能少的使用无语义的标签,在语义不明显时，既可以使用div或者p时，尽量用p, 因为p在默认情况下有上下间距，对兼容特殊终端有利；</p>
+<p>渐进增强 progressive enhancement：针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验。
+优雅降级 graceful degradation：一开始就构建完整的功能，然后再针对低版本浏览器进行兼容。降级（功能衰减）意味着往回看；而渐进增强则意味着朝前看，同时保证其根基处于安全地带。</p>
+<h3>Cookie、session、localStorage以及sessionStorage</h3>
+<p>cookie：cookie的内容主要包括：名字、值、过期时间、路径和域。路径与域一起构成cookie的作用范围。若不设置时间，则表示这个cookie的生命期为浏览器会话期间，关闭浏览器窗口，cookie就会消失。这种生命期为浏览器会话期的cookie被称为会话cookie。 会话cookie一般不存储在硬盘而是保存在内存里，若设置了过期时间，浏览器就会把cookie保存到硬盘上，关闭后再打开浏览器这些cookie仍然有效直到超过设定的过期时间。Cookie是把用户的数据写给用户的浏览器。</p>
+<p>session：在WEB开发中，服务器可以为每个用户浏览器创建一个会话对象（session对象），注意：一个浏览器独占一个session对象(默认情况下)。Session对象由服务器创建。Session技术把用户的数据写到用户独占的session中。服务器创建session出来后，会把session的id号，以cookie的形式回写给客户端，这样，只要客户端的浏览器不关，再去访问服务器时，都会带着session的id号去，服务器发现客户端浏览器带session id过来了，就会使用内存中与之对应的session为之服务。</p>
+<p>cookie和session的区别：</p>
+<p>1.cookie数据存放在客户的浏览器上，session数据放在服务器上</p>
+<p>2.cookie不是很安全，别人可以分析存放在本地的cookie并进行cookie欺骗，考虑*到安全应当使用session</p>
+<p>3.session会在一定时间内保存在服务器上，当访问增多，会比较占用你服务器的性能，考虑到减轻服务器性能方面，应当使用cookie，或者使用专门的session服务器</p>
+<p>4.单个cookie保存的数*据不能超过4K，很多浏览器都限制一个站点最多保存20个cookie。而对于 session ，其默认大小一般是1024k</p>
+<p>5.session中保存的是对象，cookie中保存的是字符串</p>
+<p>6.session不区分路径，同一个用户在访问一个网站期间，所有的session在任何一个地方都可以访问到，而cookie中如果设置了路径参数，那么同一个网站中不同路径下的cookie互相是访问不到的。</p>
+<p>Web Storage（localStorage，sessionStorage）的概念和cookie相似，区别是它是为了更大容量存储设计的。sessionStorage、localStorage和cookie的区别</p>
+<p>共同点：都是保存在浏览器端、且同源的</p>
+<p>区别：</p>
+<p>1、cookie数据始终在同源的http请求中携带（即使不需要），即cookie在浏览器和服务器间来回传递，而sessionStorage和localStorage不会自动把数据发送给服务器，仅在本地保存。cookie数据还有路径（path）的概念，可以限制cookie只属于某个路径下</p>
+<p>2、存储大小限制也不同，cookie数据不能超过4K，同时因为每次http请求都会携带cookie、所以cookie只适合保存很小的数据，如会话标识。sessionStorage和localStorage虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大</p>
+<p>3、数据有效期不同，sessionStorage：仅在当前浏览器窗口关闭之前有效；localStorage：始终有效，窗口或浏览器关闭也一直保存，因此用作持久数据；cookie：只在设置的cookie过期时间之前有效，即使窗口关闭或浏览器关闭</p>
+<p>4、作用域不同，sessionStorage在不同的浏览器窗口中不能共享，即使是同一个页面；localstorage在所有同源窗口中都是共享的；cookie也是在所有同源窗口中都是共享的</p>
+<h3>浏览器事件循环</h3>
+<p>HTML标准：</p>
+<pre><code>为了协调事件（event），用户交互（user interaction），脚本（script），渲染（rendering），网络（networking）等，用户代理（user agent）必须使用事件循环（event loops）。
+有两类事件循环：一种针对浏览上下文（browsing context），还有一种针对worker（web worker）。
+</code></pre>
+<p>事件循环的主要机制就是任务队列机制。一个事件循环里有很多个任务队列（task queues）来自不同任务源，每一个任务队列里的任务是严格按照先进先出的顺序执行的，但是不同任务队列的任务的执行顺序是不确定的。按我的理解就是，浏览器会自己调度不同任务队列。</p>
+<p>JavaScript中为了不阻塞UI的渲染，很多JavaScript任务都是异步的，它们包括键盘、鼠标I/O输入输出事件、窗口大小的resize事件、定时器（setTimeout、setInterval）事件、Ajax请求网络I/O回调等。当这些异步任务发生的时候，它们将会被放入浏览器的事件任务队列中去。在浏览器内部中存在一个消息循环池，也叫Event Loop（事件循环），JavaScript引擎在运行时后单线程的处理这些事件任务。例如用户在网页中点击了button事件，则它们会被放入在这个事件循环池中，需要等到JavaScript运行时执行线程空闲时候才会按照队列先进先出的原则被一一执行。</p>
+<p>虽然JavaScript是单线程执行的，但是浏览器并不是单线程执行的，它们有JavaScript的执行线程、UI节点的渲染线程，图片等资源的加载线程，以及Ajax请求线程等。在Chrome设计中，为了防止因一个Tab window的奔溃而影响整个浏览器，它的每一个Tab被设计为一个进程；在Chrome设计中存在很多的进程，并利用进程间通讯来完成它们之间的同步，因此这也是Chrome快速的法宝之一。对于Ajax的请求也需要特殊线程来执行，当需要发送一个Ajax请求的时候，浏览器会开辟一个新的线程来执行HTTP的请求，它并不会阻塞JavaScript线程的执行，HTTP请求状态变更事件会被作为回调放入到浏览器的事件队列中等待被执行。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2020/11/06/前端问题大全（HTML）/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2020/11/06/前端问题大全（HTML）/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+
+        <a class="scrollTop toTop" id="toTop" href="javascript:;" style="display: block;"></a>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="https://github.com/Tiquiero" style="border-bottom: none;">tiquiero</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2022总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+
+    <!-- 伊布 -->
+    <!-- <div class="eevee">
+        <div class="body">
+          <div class="head">
+            <div class="ears">
+              <div class="ear">
+                <div class="lobe"></div>
+              </div>
+              <div class="ear">
+                <div class="lobe"></div>
+              </div>
+            </div>
+            <div class="face">
+              <div class="eyes">
+                <div class="eye">
+                  <div class="eyelid"></div>
+                </div>
+                <div class="eye">
+                  <div class="eyelid"></div>
+                </div>
+              </div>
+              <div class="nose"></div>
+              <div class="mouth"></div>
+            </div>
+          </div>
+          <div class="chest">
+            <div class="fur">
+              <div class="patch"></div>
+            </div>
+            <div class="fur">
+              <div class="patch"></div>
+            </div>
+            <div class="fur">
+              <div class="patch"></div>
+            </div>
+          </div>
+          <div class="legs">
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+          </div>
+          <div class="tail">
+            <div class="tail">
+              <div class="tail">
+                <div class="tail">
+                  <div class="tail">
+                    <div class="tail -end"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> -->
+</body>
+
+
+
+	 
+	 
+	 <!-- 伊布 -->
+	 <!-- <div class="eevee">
+		<div class="body">
+		  <div class="head">
+			<div class="ears">
+			  <div class="ear">
+				<div class="lobe"></div>
+			  </div>
+			  <div class="ear">
+				<div class="lobe"></div>
+			  </div>
+			</div>
+			<div class="face">
+			  <div class="eyes">
+				<div class="eye">
+				  <div class="eyelid"></div>
+				</div>
+				<div class="eye">
+				  <div class="eyelid"></div>
+				</div>
+			  </div>
+			  <div class="nose"></div>
+			  <div class="mouth"></div>
+			</div>
+		  </div>
+		  <div class="chest">
+			<div class="fur">
+			  <div class="patch"></div>
+			</div>
+			<div class="fur">
+			  <div class="patch"></div>
+			</div>
+			<div class="fur">
+			  <div class="patch"></div>
+			</div>
+		  </div>
+		  <div class="legs">
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+		  </div>
+		  <div class="tail">
+			<div class="tail">
+			  <div class="tail">
+				<div class="tail">
+				  <div class="tail">
+					<div class="tail -end"></div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div> -->
+</html>

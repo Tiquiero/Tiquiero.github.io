@@ -1,0 +1,535 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.9.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_tiquiero.png">
+	<link rel="shortcut icon" href="/img/logo_tiquiero.png">
+	
+			    <title>
+    Tiquiero
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="tiquiero">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">Tiquiero</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/Blog-Hexo/">Blog/Hexo</a></li><li><a class="category-link" href="/categories/CSS/">CSS</a></li><li><a class="category-link" href="/categories/HTML/">HTML</a></li><li><a class="category-link" href="/categories/HTTP/">HTTP</a></li><li><a class="category-link" href="/categories/JS/">JS</a></li><li><a class="category-link" href="/categories/Python/">Python</a></li><li><a class="category-link" href="/categories/React/">React</a></li><li><a class="category-link" href="/categories/Webhooks/">Webhooks</a></li><li><a class="category-link" href="/categories/Webpack/">Webpack</a></li><li><a class="category-link" href="/categories/小程序/">小程序</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/tiquiero" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" id="banner" style="height: 25rem;background-image: url(https://pic.superbed.cn/item/5c7e47bf3a213b0417463d1a);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>JS中的深拷贝和浅拷贝</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1>基本类型和引用类型</h1>
+<p>ECMAScript变量可能包含两种不同数据类型的值：基本类型值和引用类型值。基本类型值指的是那些保存在栈内存中的简单数据段，即这种值完全保存在内存中的一个位置。而引用类型值是指那些保存堆内存中的对象，意思是变量中保存的实际上只是一个指针，这个指针指向内存中的另一个位置，该位置保存对象。</p>
+<p>目前基本类型有：Boolean、Null、Undefined、Number、String、Symbol(ES6)，引用类型有：Object、Array、Function。</p>
+<h1>深拷贝与浅拷贝</h1>
+<p>我们先看两个简单的案例：</p>
+<pre class="line-numbers language-glsl">
+    //案例1
+    var num1 = 1, num2 = num1;
+    console.log(num1) //1
+    console.log(num2) //1
+
+    num2 = 2; //修改num2
+    console.log(num1) //1
+    console.log(num2) //2
+
+    //案例2
+    var obj1 = {x: 1, y: 2}, obj2 = obj1;
+    console.log(obj1) //{x: 1, y: 2}
+    console.log(obj2) //{x: 1, y: 2}
+
+    obj2.x = 2; //修改obj2.x
+    console.log(obj1) //{x: 2, y: 2}
+    console.log(obj2) //{x: 2, y: 2}
+</pre>
+<p>案例1中的值就为基本类型，案例2中的值就为引用类型。案例2中的赋值，会改变之前对象的就是典型的浅拷贝，而不会改变之前对象的就是深拷贝，并且深拷贝与浅拷贝的概念只存在于引用类型。</p>
+<h3>Array自有方法</h3>
+<p>slice()方法：</p>
+<pre class="line-numbers language-glsl">
+    //一维数组：
+    var arr1 = [1, 2], arr2 = arr1.slice();
+    console.log(arr1); //[1, 2]
+    console.log(arr2); //[1, 2]
+
+    arr2[0] = 3; //修改arr2
+    console.log(arr1); //[1, 2]
+    console.log(arr2); //[3, 2]
+
+    //二维数组：   
+    var arr1 = [1, 2, [3, 4]], arr2 = arr1.slice();
+    console.log(arr1); //[1, 2, [3, 4]]
+    console.log(arr2); //[1, 2, [3, 4]]
+
+    arr2[2][1] = 5; 
+    console.log(arr1); //[1, 2, [3, 5]] 
+    console.log(arr2); //[1, 2, [3, 5]]
+</pre>
+<p>可以看到，一维数组arr2的修改没有影响到arr1，而二维数组影响到了，所以slice()方法只能实现一维数组的深拷贝。</p>
+<p>具备同等特性的还有：concat、Array.from() 。</p>
+<h3>Object自有方法</h3>
+<p>1.Object.assign()：</p>
+<pre class="line-numbers language-glsl">
+    //一维对象
+    var obj1 = {x: 1, y: 2}, obj2 = Object.assign({}, obj1);
+    console.log(obj1) //{x: 1, y: 2}
+    console.log(obj2) //{x: 1, y: 2}
+
+    obj2.x = 2; //修改obj2.x
+    console.log(obj1) //{x: 1, y: 2}
+    console.log(obj2) //{x: 2, y: 2}
+
+    //二维对象
+    var obj1 = {
+        x: 1, 
+        y: {
+            m: 1
+        }
+    };
+    var obj2 = Object.assign({}, obj1);
+    console.log(obj1) //{x: 1, y: {m: 1}}
+    console.log(obj2) //{x: 1, y: {m: 1}}
+
+    obj2.y.m = 2; //修改obj2.y.m
+    console.log(obj1) //{x: 1, y: {m: 2}}
+    console.log(obj2) //{x: 2, y: {m: 2}}
+</pre>
+<p>可以看出Object.assign()也只能实现一维对象的深拷贝。</p>
+<p>2.JSON.parse(JSON.stringify(obj))</p>
+<pre class="line-numbers language-glsl">
+    var obj1 = {
+        x: 1, 
+        y: {
+            m: 1
+        }
+    };
+    var obj2 = JSON.parse(JSON.stringify(obj1));
+    console.log(obj1) //{x: 1, y: {m: 1}}
+    console.log(obj2) //{x: 1, y: {m: 1}}
+
+    obj2.y.m = 2; //修改obj2.y.m
+    console.log(obj1) //{x: 1, y: {m: 1}}
+    console.log(obj2) //{x: 2, y: {m: 2}}
+</pre>
+<p>看起来JSON.parse(JSON.stringify(obj))可以完美的实现深拷贝，但是查询MDN文档后会发现有这样的一段描述：</p>
+<blockquote>
+<p>undefined、任意的函数以及 symbol 值，在序列化过程中会被忽略（出现在非数组对象的属性值中时）或者被转换成 null（出现在数组中时）。</p>
+</blockquote>
+<p>什么意思呢，我们把刚刚上面那个例子改一下：</p>
+<pre class="line-numbers language-glsl">
+    var obj1 = {
+        x: 1,
+        y: undefined,
+        z: function add(z1, z2) {
+            return z1 + z2
+        },
+        a: Symbol("foo")
+    };
+    var obj2 = JSON.parse(JSON.stringify(obj1));
+    console.log(obj1) //{x: 1, y: undefined, z: ƒ, a: Symbol(foo)}
+    console.log(JSON.stringify(obj1)); //{"x":1}
+    console.log(obj2) //{x: 1}
+</pre>
+<p>可以看到，y,z,a都被忽略了，验证了MDN文档那句话的意思：JSON.parse(JSON.stringify(obj))的使用也是有局限性的，不能深拷贝含有undefined、function、symbol值的对象。不过JSON.parse(JSON.stringify(obj))简单粗暴，已经满足90%的使用场景了。</p>
+<h3>递归解决</h3>
+<p>我们发现JS 提供的自有方法并不能彻底解决Array、Object的深拷贝问题，我们可以自己使用递归写一个方法实现深拷贝：</p>
+<pre class="line-numbers language-glsl">
+    function deepCopy(obj){
+        let result = {},
+            keys = Object.keys(obj),
+            key = null,
+            temp = null;
+
+        keys.map(function(item,index){
+            key = keys[index];
+            temp = obj[key];
+
+            if(temp && typeof temp === 'object'){
+                // 如果字段的值也是一个对象则递归操作
+                result[key] = deepCopy(temp);
+            }else{
+                result[key] = temp;
+            }
+        });
+
+        return result;
+    }
+
+    var obj1 = {
+        x: {
+            m: 1
+        },
+        y: undefined,
+        z: function add(z1, z2) {
+            return z1 + z2
+        },
+        a: Symbol("foo")
+    };
+
+    var obj2 = deepCopy(obj1);
+    obj2.x.m = 2;
+
+    console.log(obj1); //{x: {m: 1}, y: undefined, z: ƒ, a: Symbol(foo)}
+    console.log(obj2); //{x: {m: 2}, y: undefined, z: ƒ, a: Symbol(foo)}
+</pre>
+<p>这个递归函数可以完美解决上面那些问题，我们也可以用第三方库：jquery的$.extend和lodash的_.cloneDeep来解决深拷贝。上面虽然是用Object来验证的，但对于Array也同样适用，因为Array也是特殊的Object。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2019/03/15/JS中的深拷贝和浅拷贝/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2019/03/15/JS中的深拷贝和浅拷贝/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+
+        <a class="scrollTop toTop" id="toTop" href="javascript:;" style="display: block;"></a>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="https://github.com/Tiquiero" style="border-bottom: none;">tiquiero</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2022总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+
+    <!-- 伊布 -->
+    <!-- <div class="eevee">
+        <div class="body">
+          <div class="head">
+            <div class="ears">
+              <div class="ear">
+                <div class="lobe"></div>
+              </div>
+              <div class="ear">
+                <div class="lobe"></div>
+              </div>
+            </div>
+            <div class="face">
+              <div class="eyes">
+                <div class="eye">
+                  <div class="eyelid"></div>
+                </div>
+                <div class="eye">
+                  <div class="eyelid"></div>
+                </div>
+              </div>
+              <div class="nose"></div>
+              <div class="mouth"></div>
+            </div>
+          </div>
+          <div class="chest">
+            <div class="fur">
+              <div class="patch"></div>
+            </div>
+            <div class="fur">
+              <div class="patch"></div>
+            </div>
+            <div class="fur">
+              <div class="patch"></div>
+            </div>
+          </div>
+          <div class="legs">
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+            <div class="leg">
+              <div class="inner-leg"></div>
+            </div>
+          </div>
+          <div class="tail">
+            <div class="tail">
+              <div class="tail">
+                <div class="tail">
+                  <div class="tail">
+                    <div class="tail -end"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> -->
+</body>
+
+
+
+	 
+	 
+	 <!-- 伊布 -->
+	 <!-- <div class="eevee">
+		<div class="body">
+		  <div class="head">
+			<div class="ears">
+			  <div class="ear">
+				<div class="lobe"></div>
+			  </div>
+			  <div class="ear">
+				<div class="lobe"></div>
+			  </div>
+			</div>
+			<div class="face">
+			  <div class="eyes">
+				<div class="eye">
+				  <div class="eyelid"></div>
+				</div>
+				<div class="eye">
+				  <div class="eyelid"></div>
+				</div>
+			  </div>
+			  <div class="nose"></div>
+			  <div class="mouth"></div>
+			</div>
+		  </div>
+		  <div class="chest">
+			<div class="fur">
+			  <div class="patch"></div>
+			</div>
+			<div class="fur">
+			  <div class="patch"></div>
+			</div>
+			<div class="fur">
+			  <div class="patch"></div>
+			</div>
+		  </div>
+		  <div class="legs">
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+			<div class="leg">
+			  <div class="inner-leg"></div>
+			</div>
+		  </div>
+		  <div class="tail">
+			<div class="tail">
+			  <div class="tail">
+				<div class="tail">
+				  <div class="tail">
+					<div class="tail -end"></div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div> -->
+</html>
